@@ -1,30 +1,20 @@
-const myForm = document.querySelector('#my-form');
-const nameInput = document.querySelector('#name');
-const emailInput = document.querySelector('#email');
-const userList = document.querySelector('#users');
-const msg = document.querySelector('.msg');
+let filterInput = document.getElementById('filter');
 
-myForm.addEventListener('submit', onSubmit);
+filterInput.addEventListener('keyup', checkFilter);
 
-function onSubmit(e){
-    e.preventDefault();
+function checkFilter(e){
+    let searchingValue = e.target.value.toUpperCase();
 
-    console.log()
-    if(emailInput.value === '' || nameInput.value === ''){
-        msg.classList.add('error');
-        msg.innerHTML = 'Please enter all fields';
-
-        setTimeout(() => msg.remove(), 3000);
-    }
-    else{
-        const li = document.createElement('li');
-        li.appendChild(document.createTextNode(nameInput.value + ' ' + emailInput.value));
-        
-        userList.appendChild(li);
-
-        nameInput.value = '';
-        emailInput.value = '';
-
+    let contactList = document.querySelectorAll('li.contacts-item');
     
-    }
+    Array.from(contactList).forEach(contact => {
+       let aElement = contact.children[0].innerHTML;
+
+       if(aElement.toUpperCase().indexOf(searchingValue) > -1){
+            contact.style.display = '';
+        } else{
+            contact.style.display = 'none';
+       }    
+
+    });
 }
