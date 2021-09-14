@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href ="style.css">     
+</head>
+<body>
+    
+    <div id="container">
+        <h1>Weight Converter</h1>
+        <div id="mainContent">
+            <div id="scaleSelector">
+                <p>Select input scale:</p>
+                <button class="scales selectedScale">kilograms (kg)</button>
+                <button class="scales">grams (g)</button>
+                <button class="scales">pounds (lbs)</button>
+                <button class="scales">ounces (oz)</button>
+            </div>
+
+
+            <div id="errorMessage">
+                <p>Please enter positve number</p>
+            </div>
+
+            <div id="searchBar">
+                <input type="number" id="inputBar" placeholder="Enter kilograms (kg).." min="0"> 
+                <p id="shortName"> kg</p>
+            </div>
+
+
+            <div id="results">
+                <div id="g">
+                    <h4>grams (g):</h4>
+                    <p>0 g</p>
+                </div>
+
+                <div id="lbs">
+                    <h4>pounds (lbs): </h4>
+                    <p>0 lbs</p>
+                </div>
+                
+                <div id="oz">
+                    <h4>ounces (oz): </h4>
+                    <p>0 oz</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

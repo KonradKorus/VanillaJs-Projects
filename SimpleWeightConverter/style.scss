@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(83, 83, 83);
+    color: rgb(221, 221, 221);
+    
+}
+
+#container{
+    width:60%;
+    min-width: 500px;
+    margin: auto;
+
+    #mainContent{
+        background-color: rgb(56, 56, 56);
+        padding: 2% 2% 5% 2%;
+    }
+
+    h1{
+       
+        text-align: center;
+        font-weight: normal;
+        padding: 15px;
+        margin: 0.7em 0;
+    }
+
+    #scaleSelector{
+        display: flex;
+        padding:0.8em;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p{
+
+        font-size: 1.4em;
+        margin-right: 0.5em;
+    }
+
+    .scales{
+        padding: 7px;
+        margin:0 7px;
+        background-color: rgb(56, 56, 56);
+        color: rgb(221, 221, 221);
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 5px;
+        font-size: 1em;
+       
+    }
+
+    .selectedScale{
+        box-shadow:  0 0 0 1px rgb(238, 238, 238);
+        background-color: rgb(41, 41, 41);
+    }
+
+    .scales:hover{
+        cursor: pointer;
+        box-shadow:  0 0 0 1px rgb(238, 238, 238);
+        background-color: rgb(41, 41, 41);
+    }
+
+    #errorMessage{
+        color: red;
+        font-style: italic;
+        font-size: 0.7em;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        margin-top: 1em;
+        display: none;
+    }
+
+    #searchBar{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:10px;
+
+        p{
+            font-size: 1.4em; 
+            margin-left: 0.5em;
+            width:1.5em;
+        }
+
+        input[type=number]{
+            background-color: rgb(56, 56, 56);
+            border: none;
+            border-bottom: 1px solid rgb(238, 238, 238);
+            padding: 7px;
+            font-size: 1em;
+            width: 50%;
+            min-width: 280px;;
+            color: rgb(238, 238, 238);
+        }
+
+        input[type=number]:focus{
+            outline: none;
+        }
+
+        //removing arrows in number input 
+        input[type=number]::-webkit-outer-spin-button,
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        //removing arrows in number input for mozilla
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    }
+
+    #results{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2%;
+        
+       
+        div{
+            padding:2%;
+            margin: 2%;
+            border-radius: 7px;
+            min-width: 350px;
+            width: 37%;
+
+            
+            h4{
+                margin-bottom: 15px;
+                padding:2%;
+            }
+
+
+            p{
+                font-size: 1em;
+                padding:0 2%;
+            }
+
+        }
+
+        div:nth-child(1){
+            background-color: rgb(218, 36, 36);
+        }
+        
+        div:nth-child(2){
+            background-color: rgb(53, 53, 216);
+        }        
+        div:nth-child(3){
+            background-color: rgb(40, 146, 40);
+        }        
+
+        
+
+        
+
+
+
+        // #kg{
+        //     background-color: rgb(218, 36, 36);
+        //     display: none;
+        // }  
+
+        // #g{
+        //     background-color: rgb(53, 53, 216);
+        // }   
+        
+        // #lbs{
+        //     background-color: rgb(40, 146, 40);
+        // }    
+              
+        // #oz{
+        //     background-color: rgb(146, 97, 40);
+
+        // }    
+      
+        
+
+
+    }
+}

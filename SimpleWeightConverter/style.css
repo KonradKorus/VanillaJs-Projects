@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #535353;
+  color: #dddddd;
+}
+
+#container {
+  width: 60%;
+  min-width: 500px;
+  margin: auto;
+}
+
+#container #mainContent {
+  background-color: #383838;
+  padding: 2% 2% 5% 2%;
+}
+
+#container h1 {
+  text-align: center;
+  font-weight: normal;
+  padding: 15px;
+  margin: 0.7em 0;
+}
+
+#container #scaleSelector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.8em;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container p {
+  font-size: 1.4em;
+  margin-right: 0.5em;
+}
+
+#container .scales {
+  padding: 7px;
+  margin: 0 7px;
+  background-color: #383838;
+  color: #dddddd;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#container .selectedScale {
+  -webkit-box-shadow: 0 0 0 1px #eeeeee;
+          box-shadow: 0 0 0 1px #eeeeee;
+  background-color: #292929;
+}
+
+#container .scales:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0 1px #eeeeee;
+          box-shadow: 0 0 0 1px #eeeeee;
+  background-color: #292929;
+}
+
+#container #errorMessage {
+  color: red;
+  font-style: italic;
+  font-size: 0.7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  margin-top: 1em;
+  display: none;
+}
+
+#container #searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+#container #searchBar p {
+  font-size: 1.4em;
+  margin-left: 0.5em;
+  width: 1.5em;
+}
+
+#container #searchBar input[type=number] {
+  background-color: #383838;
+  border: none;
+  border-bottom: 1px solid #eeeeee;
+  padding: 7px;
+  font-size: 1em;
+  width: 50%;
+  min-width: 280px;
+  color: #eeeeee;
+}
+
+#container #searchBar input[type=number]:focus {
+  outline: none;
+}
+
+#container #searchBar input[type=number]::-webkit-outer-spin-button,
+#container #searchBar input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#container #searchBar input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#container #results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2%;
+}
+
+#container #results div {
+  padding: 2%;
+  margin: 2%;
+  border-radius: 7px;
+  min-width: 350px;
+  width: 37%;
+}
+
+#container #results div h4 {
+  margin-bottom: 15px;
+  padding: 2%;
+}
+
+#container #results div p {
+  font-size: 1em;
+  padding: 0 2%;
+}
+
+#container #results div:nth-child(1) {
+  background-color: #da2424;
+}
+
+#container #results div:nth-child(2) {
+  background-color: #3535d8;
+}
+
+#container #results div:nth-child(3) {
+  background-color: #289228;
+}
+/*# sourceMappingURL=style.css.map */
