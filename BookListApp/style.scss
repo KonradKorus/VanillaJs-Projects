@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#container{
+    width:75%;
+    min-width: 500px;
+    margin: auto;
+
+    .blueFont{
+        color: #0081B1;
+    }
+
+    h1{
+        text-align: center;
+        font-weight: normal;
+        padding: 15px;
+        margin: 0.5em 0;
+        font-size: 2.5rem;
+       
+        i{
+            margin-right: 10px;
+        }
+    }
+
+    #bookForm{
+        
+        label{
+            display: block;
+            margin: 1em 0 8px 0;
+        }
+
+        input{
+            width:stretch;
+            font-size: 1em;
+            padding: 8px;
+            border: 1px solid gray;
+            border-radius: 3px;;
+            border-width: 1px;
+        }
+
+
+        input[type=submit]{
+            text-align: center;
+            background-color: #0081B1;
+            color: white;
+            margin-top:2rem;
+            padding:8px;
+            border: 1px solid #0081B1;
+        }
+
+        input[type=submit]:hover{
+            background-color: #006F94;
+            transition: 0.5s;
+        }
+    }
+
+    #bookTable{
+        width:100%;
+        margin-top:3em;
+        border-collapse: collapse;
+
+        th{
+            width:30%;
+            text-align: left;  
+            border-bottom: 1px solid lightgray ;
+            border-top: 1px solid lightgray;
+            padding: 8px;
+        }
+
+    }
+
+}
