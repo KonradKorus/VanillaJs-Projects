@@ -7,3 +7,6 @@ https://konradkorus.github.io/VanillaJs-Projects/SimpleFilterableList/
 
 Weight converter:
 https://konradkorus.github.io/VanillaJs-Projects/SimpleWeightConverter/
+
+Book List App:
+https://konradkorus.github.io/VanillaJs-Projects/BookListApp/
