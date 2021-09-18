@@ -13,6 +13,20 @@ body{
     min-width: 500px;
     margin: auto;
 
+    .alert{
+        width:100%;
+        padding:15px;
+        color: white;
+    }
+
+    .succes{
+        background-color:  green;
+    }
+
+    .failure{
+        background-color: #F04124;
+    }
+
     .blueFont{
         color: #0081B1;
     }
@@ -66,12 +80,37 @@ body{
         margin-top:3em;
         border-collapse: collapse;
 
+        #bookList {
+            tr:nth-child(2n+1){
+            background-color: lightgray;
+            }
+        }
+
         th{
-            width:30%;
+            width:28%;
             text-align: left;  
             border-bottom: 1px solid lightgray ;
             border-top: 1px solid lightgray;
-            padding: 8px;
+            padding: 1rem;
+        }
+
+        td{
+            width:25%;
+            text-align: left;  
+            padding: 1rem;
+            //border:1px solid red;
+        }
+
+        .delBtn{
+            background-color: #F04124;
+            text-decoration: none;;
+            color: white;
+            padding: 6px 8px;
+            border-radius: 3px;
+            font-size: 1rem;
+        }
+        .delBtn:hover{
+            background-color: #cf3b21;
         }
 
     }
