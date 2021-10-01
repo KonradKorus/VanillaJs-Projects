@@ -1,4 +1,4 @@
-const url = 'docs/sample_pdf.pdf';
+const url = 'PDFViwer/docs/sample_pdf.pdf';
 
 let pdfDoc = null,
     pageNum = 1,
